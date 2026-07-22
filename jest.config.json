@@ -1,0 +1,12 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "roots": ["<rootDir>/src/__tests__"],
+  "testMatch": ["**/*.test.ts"],
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/src/$1"
+  },
+  "setupFilesAfterFramework": [],
+  "clearMocks": true,
+  "collectCoverageFrom": ["src/**/*.ts", "!src/__tests__/**", "!src/index.ts"]
+}
